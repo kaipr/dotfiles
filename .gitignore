@@ -47,3 +47,6 @@ Session.vim
 # SASS
 # ----------------------------------------------------------------------------------------------
 .sass-cache
+
+# Ignore own git directory
+.dotfiles
