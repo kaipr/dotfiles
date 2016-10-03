@@ -2,8 +2,6 @@ source ~/.zplug/init.zsh
 
 zplug "plugins/command-not-found", from:oh-my-zsh
 zplug "plugins/bundler", from:oh-my-zsh
-zplug "plugins/chruby", from:oh-my-zsh
-zplug "plugins/nvm", from:oh-my-zsh
 zplug "plugins/fasd", from:oh-my-zsh
 zplug "plugins/git-flow", from:oh-my-zsh
 zplug "mafredri/zsh-async", on:sindresorhus/pure
