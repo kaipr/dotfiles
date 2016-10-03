@@ -188,6 +188,8 @@ you should place your code here."
 
   ;; different separator to look good at 1.0 scale (performance?)
   (setq powerline-default-separator 'alternate)
+
+  (setq scroll-margin 3)
   )
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
