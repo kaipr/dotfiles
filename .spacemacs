@@ -49,9 +49,7 @@ values."
      react
      )
    dotspacemacs-additional-packages '(
-                                      editorconfig
                                       darktooth-theme
-                                      gruvbox-theme
                                       rainbow-mode
                                       )
    dotspacemacs-frozen-packages '()
@@ -77,9 +75,10 @@ values."
    dotspacemacs-startup-buffer-responsive t
    dotspacemacs-scratch-mode 'text-mode
    dotspacemacs-themes '(
+                         spacemacs-dark
+                         solarized-light
                          darktooth
                          gruvbox
-                         solarized-light
                          solarized-dark
                          ;; spacegray
                          ;; hickey
@@ -190,11 +189,14 @@ you should place your code here."
    ;; different separator to look good at 1.0 scale (performance?)
    powerline-default-separator 'alternate
 
-   scroll-margin 3
+   scroll-margin 5
 
    ;; only refresh magit status pane if its active
    magit-refresh-status-buffer nil
   )
+
+  ;; use spacemacs as $EDITOR
+  (global-git-commit-mode t)
 
   ;; enable editorconfig
   (editorconfig-mode 1)
@@ -211,3 +213,23 @@ you should place your code here."
        (sp-pair "\"" nil :actions :rem)))
 )
 
+(defun dotspacemacs/emacs-custom-settings ()
+  "Emacs custom settings.
+This is an auto-generated function, do not modify its content directly, use
+Emacs customize menu instead.
+This function is called at the very end of Spacemacs initialization."
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (zonokai-theme zenburn-theme underwater-theme twilight-theme twilight-anti-bright-theme toxi-theme tao-theme tangotango-theme tango-2-theme sublime-themes subatomic-theme sourcerer-theme soft-stone-theme soft-charcoal-theme seti-theme railscasts-theme professional-theme phoenix-dark-pink-theme pastels-on-dark-theme omtose-phellack-theme occidental-theme noctilux-theme naquadah-theme monokai-theme monochrome-theme molokai-theme moe-theme minimal-theme material-theme majapahit-theme light-soap-theme jazz-theme inkpot-theme hemisu-theme gruber-darker-theme grandshell-theme gotham-theme flatui-theme firebelly-theme farmhouse-theme espresso-theme django-theme darkmine-theme dakrone-theme color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized cherry-blossom-theme bubbleberry-theme badwolf-theme apropospriate-theme anti-zenburn-theme ample-theme alect-themes afternoon-theme helm-purpose window-purpose imenu-list google-translate golden-ratio fancy-battery define-word zen-and-art-theme yaml-mode xterm-color ws-butler window-numbering which-key web-mode web-beautify volatile-highlights vi-tilde-fringe uuidgen use-package ujelly-theme twilight-bright-theme tronesque-theme toc-org tide tango-plus-theme tagedit sunny-day-theme subatomic256-theme spacemacs-theme spaceline spacegray-theme soothe-theme solarized-theme soft-morning-theme smyx-theme smeargle slim-mode shell-pop scss-mode sass-mode rvm ruby-tools ruby-test-mode rubocop rspec-mode robe reverse-theme reveal-in-osx-finder restart-emacs rbenv ranger rainbow-mode rainbow-delimiters quelpa purple-haze-theme pug-mode projectile-rails popwin planet-theme phoenix-dark-mono-theme persp-mode pbcopy paradox osx-trash osx-dictionary orgit organic-green-theme org-projectile org-present org-pomodoro org-plus-contrib org-download org-bullets open-junk-file oldlace-theme obsidian-theme ob-elixir niflheim-theme neotree mustang-theme multi-term move-text mmm-mode minitest markdown-toc magit-gitflow magit-gh-pulls macrostep lush-theme lorem-ipsum livid-mode linum-relative link-hint less-css-mode launchctl json-mode js2-refactor js-doc jbeans-theme ir-black-theme info+ indent-guide ido-vertical-mode hungry-delete htmlize hl-todo highlight-parentheses highlight-numbers highlight-indentation hide-comnt heroku-theme help-fns+ helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-gitignore helm-flx helm-descbinds helm-css-scss helm-company helm-c-yasnippet helm-ag hc-zenburn-theme gruvbox-theme gnuplot github-search github-clone github-browse-file gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-gutter-fringe git-gutter-fringe+ gist gh-md gandalf-theme flycheck-pos-tip flycheck-mix flx-ido flatland-theme fill-column-indicator feature-mode eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-magit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eval-sexp-fu eshell-z eshell-prompt-extras esh-help emmet-mode elisp-slime-nav editorconfig dumb-jump dracula-theme diff-hl darktooth-theme darkokai-theme darkburn-theme cyberpunk-theme company-web company-tern company-statistics column-enforce-mode coffee-mode clues-theme clean-aindent-mode chruby busybee-theme bundler birds-of-paradise-plus-theme auto-yasnippet auto-highlight-symbol auto-compile ample-zen-theme alchemist aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line ac-ispell))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+)
