@@ -24,8 +24,4 @@ alias gc='git c'
 alias gl='git l'
 alias gco='git co'
 
-export PATH="$HOME/.bin:$PATH"
-
-# recommended by brew doctor
-export PATH="/usr/local/bin:$PATH"
 eval "$(rbenv init - --no-rehash)"
