@@ -13,8 +13,6 @@ zplug "zsh-users/zsh-history-substring-search", defer:2
 
 zplug load
 
-alias dotf='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-
 alias ls='ls -G'
 alias la='ls -la'
 
