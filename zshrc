@@ -45,6 +45,9 @@ SAVEHIST=4096
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
+# Init fasd
+eval "$(fasd --init auto)"
+
 # completion
 autoload -U compinit
 compinit
